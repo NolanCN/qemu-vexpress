@@ -8,7 +8,7 @@
 
 
 # Define the list of packages to install
-packages=("build-essential" "qemu-system" "gcc-arm-linux-gnueabi" "g++-arm-linux-gnueabi" "libncurses-dev" "libgmp3-dev" "libmpc-dev" "bison" “flex”)
+packages=("build-essential" "qemu-system" "gcc-arm-linux-gnueabi" "g++-arm-linux-gnueabi" "libncurses-dev" "libgmp3-dev" "libmpc-dev" "bison" “flex” "libssl-dev" "bc")
 
 # Check if the script is executed with root privileges
 if [[ $EUID -ne 0 ]]; then
@@ -17,5 +17,6 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Install the dependencies required for building
-apt install -y "${packages[@]}"
+apt-get update
+apt-get install -y "${packages[@]}"
 
