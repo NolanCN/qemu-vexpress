@@ -2,6 +2,17 @@
 
 This repository contains shell scripts for setting up an ARM-based embedded system using QEMU. The scripts include downloading, compiling, and configuring components such as U-Boot, the Linux kernel, and BusyBox, as well as running QEMU with the configured system.
 
+## Experimental Environment
+
+The scripts were tested and developed in the following environment:
+
+- **Operating System:** Ubuntu 22.04.3 LTS
+- **GNU Make:** 4.3
+- **Git:** 2.34.1
+- **arm-linux-gnueabi-gcc:** 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04)
+- **arm-linux-gnueabi-g++:** 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04)
+- **QEMU emulator:** 6.2.0 (Debian 1:6.2+dfsg-2ubuntu6.15)
+
 ## Scripts
 
 1. **sudo_install_dependencies.sh**
