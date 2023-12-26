@@ -144,6 +144,9 @@ cd ..
 log "Compiling the test application"
 arm-linux-gnueabi-gcc test/hello.c -o rootfs/root/hello || log_error "Failed to compile the test application"
 
+cd ./virtual_char_driver && make && cd ..
+cp ./virtual_char_driver/virtual_char_device.ko ./rootfs/root
+
 
 # Create root filesystem image
 log "Creating root filesystem image"

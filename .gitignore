@@ -8,3 +8,5 @@ log.txt
 rootfs
 tmpfs
 rootfs.img
+temp.sh
+log_file.txt
